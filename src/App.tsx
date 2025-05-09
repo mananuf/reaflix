@@ -23,7 +23,7 @@ const App = (): JSX.Element => {
 
   // Debounce search term to prevent unnecessary API calls
   // Debounces key strokes to 500ms
-  useDebounce(() => setDebounceSearchTerm(searchTerm), 500, [searchTerm]);
+  useDebounce(() => setDebounceSearchTerm(searchTerm), 600, [searchTerm]);
 
   const fetchMovies = async (query = '') => {
     setIsLoading(true)
